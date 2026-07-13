@@ -57,7 +57,19 @@ body > *
       padding-top: .5em
 
   .intro
+    display: grid
+    grid-template-columns: minmax(0, 1fr) 10em
+    align-items: center
+    gap: 2em
     padding-bottom: 1.7em
+
+  .profile-photo
+    width: 10em
+    aspect-ratio: 4 / 5
+    margin: 0
+    border-radius: .75em
+    object-fit: cover
+    box-shadow: 0 .5em 1.5em rgba(light(0), .12)
 
   .eyebrow
     margin: 0 0 .35em
@@ -136,6 +148,14 @@ body > *
 
 @media (max-width: 46em)
   .home
+    .intro
+      grid-template-columns: 1fr
+      gap: 1.25em
+
+    .profile-photo
+      grid-row: 1
+      width: 8em
+
     .two-column
       grid-template-columns: 1fr
     .entry-head
