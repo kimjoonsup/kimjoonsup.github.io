@@ -45,7 +45,7 @@ permalink: /projects/
     </a>
     <div class="project-info">
       <h2><a href="{{ "/projects/kakao-ai-agent/" | relative_url }}">Kakao AI Agent Competition</a></h2>
-      <p class="project-subtitle">AutoReply Agent / Adaptive Push</p>
+      <p class="project-subtitle">AutoReply / Adaptive Push Agent</p>
       <p class="project-meta">2nd Place · Dec 2025 · KRW 3,000,000 prize</p>
       <p>Two complementary agents designed to reduce the effort of routine replies and notification fatigue.</p>
     </div>
