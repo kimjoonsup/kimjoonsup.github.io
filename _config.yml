@@ -29,6 +29,7 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:dankim99@snu.ac.kr"}
   - {title: Github, icon: github, url: "https://kimjoonsup.github.io"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/%EC%A4%80%EC%84%AD-%EA%B9%80-b7965936b/"}
 
 comments:
 #  disqus_shortname: ""         # see https://disqus.com
