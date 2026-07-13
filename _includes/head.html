@@ -5,14 +5,15 @@
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
+{% assign cache_version = site.github.build_revision | default: site.time | url_encode %}
 {%- if site.show_minimal -%}
-<link rel="stylesheet" href="{{ "/assets/css/minimal.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/minimal.css" | relative_url }}?v={{ cache_version }}">
 {%- elsif site.show_frame -%}
-<link rel="stylesheet" href="{{ "/assets/css/frame.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/frame.css" | relative_url }}?v={{ cache_version }}">
 {%- else -%}
-<link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}?v={{ cache_version }}">
 {%- endif -%}
-<link rel="stylesheet" href="{{ "/assets/PT-Sans/index.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/PT-Sans/index.css" | relative_url }}?v={{ cache_version }}">
 {%- if site.plugins contains "jekyll-feed" -%}
 <link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">
 {%- endif -%}
