@@ -37,8 +37,10 @@ body > *
     transform: scale(1.025)
 
   h2
-    margin: .8em .8em .2em
+    min-height: 2.5em
+    margin: .8em
     font-size: 1.15em
+    line-height: 1.25
 
   p
     margin: 0 1em 1em
@@ -65,10 +67,10 @@ body > *
 
   .profile-photo
     width: 10em
-    aspect-ratio: 4 / 5
+    height: auto
     margin: 0
     border-radius: .75em
-    object-fit: cover
+    object-fit: contain
     box-shadow: 0 .5em 1.5em rgba(light(0), .12)
 
   .eyebrow
