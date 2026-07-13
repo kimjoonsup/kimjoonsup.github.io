@@ -3,6 +3,33 @@ layout: default
 title: "Joonsup Kim"
 ---
 
+<style>
+  .home .intro {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    align-items: center !important;
+    gap: 1.75em !important;
+  }
+
+  .home .profile-photo {
+    display: block !important;
+    width: 100% !important;
+    height: 20rem !important;
+    margin: 0 !important;
+    object-fit: contain !important;
+  }
+
+  @media (max-width: 46em) {
+    .home .intro {
+      grid-template-columns: 1fr !important;
+    }
+
+    .home .profile-photo {
+      height: 14rem !important;
+    }
+  }
+</style>
+
 <main class="home">
   <section class="intro">
     <img class="profile-photo" src="{{ "/assets/images/joonsup-kim-profile.png" | relative_url }}?v={{ site.github.build_revision }}" alt="Joonsup Kim at a football stadium">
