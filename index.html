@@ -19,6 +19,18 @@ title: "Joonsup Kim"
     object-fit: contain !important;
   }
 
+  .home .profile-figure {
+    margin: 0 !important;
+  }
+
+  .home .profile-caption {
+    margin-top: 0.65rem !important;
+    color: #6f7280 !important;
+    font-size: 0.82em !important;
+    font-style: italic !important;
+    line-height: 1.4 !important;
+  }
+
   @media (max-width: 46em) {
     .home .intro {
       grid-template-columns: 1fr !important;
@@ -32,7 +44,10 @@ title: "Joonsup Kim"
 
 <main class="home">
   <section class="intro">
-    <img class="profile-photo" src="{{ "/assets/images/joonsup-kim-profile.png" | relative_url }}?v={{ site.github.build_revision }}" alt="Joonsup Kim at a football stadium">
+    <figure class="profile-figure">
+      <img class="profile-photo" src="{{ "/assets/images/joonsup-kim-profile.png" | relative_url }}?v={{ site.github.build_revision }}" alt="Joonsup Kim at Stamford Bridge">
+      <figcaption class="profile-caption">As you can see, I enjoy watching English football and I’m especially a big fan of Chelsea FC. This photo was taken during my visit to Stamford Bridge, Chelsea’s home stadium, which was a truly memorable experience for me!</figcaption>
+    </figure>
     <div class="intro-copy">
       <h1>Joonsup Kim</h1>
       <p>

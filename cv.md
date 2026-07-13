@@ -7,9 +7,9 @@ permalink: /cv/
 <style>
   .cv-preview {
     display: block !important;
-    width: calc(100vw - 3rem) !important;
-    max-width: 72rem !important;
-    height: 88vh !important;
+    width: calc(90vw - 3rem) !important;
+    max-width: 65rem !important;
+    height: 79vh !important;
     margin: 1rem 0 1rem 50% !important;
     transform: translateX(-50%) !important;
     border: 1px solid #848796 !important;
@@ -18,8 +18,8 @@ permalink: /cv/
 
   @media (max-width: 46em) {
     .cv-preview {
-      width: calc(100vw - 2rem) !important;
-      height: 85vh !important;
+      width: calc(90vw - 1rem) !important;
+      height: 76vh !important;
     }
   }
 </style>

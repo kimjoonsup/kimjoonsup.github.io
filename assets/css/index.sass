@@ -66,9 +66,9 @@ body > *
 
 .cv-preview
   display: block
-  width: calc(100vw - 3em)
-  max-width: 72em
-  height: 88vh
+  width: calc(90vw - 3em)
+  max-width: 65em
+  height: 79vh
   margin: 1em 0 1em 50%
   transform: translateX(-50%)
   border: 1px solid gray(28)
@@ -101,6 +101,16 @@ body > *
     border-radius: .75em
     object-fit: contain
     box-shadow: 0 .5em 1.5em rgba(light(0), .12)
+
+  .profile-figure
+    margin: 0
+
+  .profile-caption
+    margin-top: .65rem
+    color: gray(72)
+    font-size: .82em
+    font-style: italic
+    line-height: 1.4
 
   .eyebrow
     margin: 0 0 .35em
@@ -179,8 +189,8 @@ body > *
 
 @media (max-width: 46em)
   .cv-preview
-    width: calc(100vw - 2em)
-    height: 85vh
+    width: calc(90vw - 1em)
+    height: 76vh
 
   .home
     .intro
