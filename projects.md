@@ -24,7 +24,7 @@ permalink: /projects/
   <article class="project-card">
     <h2><a href="{{ "/projects/signal-free-flow/" | relative_url }}">Signal-Free Flow</a></h2>
     <a class="project-image" href="{{ "/projects/signal-free-flow/" | relative_url }}" aria-label="Read about the Signal-Free Flow reinforcement learning project">
-      <img src="{{ "/assets/images/projects/signal-free-flow-results.png" | relative_url }}" alt="Waiting time and throughput comparison across traffic levels">
+      <img src="{{ "/assets/images/projects/signal-free-flow-poster.png" | relative_url }}" alt="Signal-Free Flow reinforcement learning project poster">
     </a>
     <p>Reinforcement Learning Course Project</p>
   </article>

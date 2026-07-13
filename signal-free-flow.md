@@ -4,26 +4,22 @@ title: "Signal-Free Flow: Reinforcement Learning for Autonomous Intersections"
 permalink: /projects/signal-free-flow/
 ---
 
-![Average waiting time and throughput for fixed-signal, rule-based, and PPO controllers across traffic levels]({{ "/assets/images/projects/signal-free-flow-results.png" | relative_url }})
+![Signal-Free Flow reinforcement learning project poster]({{ "/assets/images/projects/signal-free-flow-poster.png" | relative_url }})
 
 **Reinforcement Learning Course Final Project · Team Project**
 
-Signal-Free Flow studies whether cooperative autonomous-driving policies can replace traffic lights at a four-way intersection. We built a custom simulator and compared a fixed-time signal controller, a cooperative rule-based controller, and a decentralized PPO policy under low-, medium-, and high-traffic conditions.
+Signal-Free Flow studies whether reinforcement learning can improve traffic flow at a fully autonomous four-way intersection. We built a custom simulator and compared fixed-time signal control, cooperative rule-based control, and a decentralized PPO policy.
 
 ## Approach
 
-Each active vehicle shares a PPO policy and chooses among deceleration, maintaining speed, and acceleration from a 54-dimensional local observation. Because reward design alone produced policies that either collided or became overly conservative, we introduced three safety priors:
+Pure reinforcement learning was highly sensitive to reward scaling: aggressive policies collided, while overly conservative policies stopped before entering the intersection. To make learning safer and more stable, we combined PPO with:
 
-- a rule-based controller encoding car-following and conflict-priority rules;
-- behavior-cloning warm start from approximately 6,000 expert state-action pairs;
-- a runtime safety shield that replaces unsafe actions before execution.
+- rule-based safety knowledge for safe distance, conflict detection, and yielding;
+- a behavior-cloning warm start from safe driving examples;
+- a runtime safety shield that overrides unsafe actions during PPO fine-tuning.
 
 ## Results
 
-The safety-aware PPO controller completed evaluation without collisions and outperformed both baselines on waiting time, delay, throughput, and completion rate across all three traffic levels. Compared with the fixed-time signal, it reduced average delay by **80%, 69%, and 38%** in low-, medium-, and high-traffic settings, respectively, while increasing throughput by approximately **2.8–3.4×**.
-
-The ablation study also showed that safety did not emerge reliably from reward tuning alone: removing the runtime shield caused every evaluation episode to end in a collision. The project therefore highlights a practical division of labor—explicit safety mechanisms define the admissible behavior, while reinforcement learning optimizes efficiency within that safe region.
-
-[View the full project report (PDF)]({{ "/assets/files/signal-free-flow-report.pdf" | relative_url }})
+The PPO controller reduced waiting time while increasing throughput across traffic levels. The project’s central finding is that reinforcement learning works best here when explicit safety mechanisms provide a reliable starting point and guard unsafe actions, allowing PPO to focus on traffic efficiency.
 
 [← Back to Projects]({{ "/projects/" | relative_url }})

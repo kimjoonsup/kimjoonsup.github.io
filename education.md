@@ -16,5 +16,3 @@ Working thesis / manuscript in preparation: “Two-Sided Contextual Bandits with
 **B.S. in Mathematics; B.A. in Economics, Double Major** · Mar 2019–Feb 2025
 
 - Graduated 4th out of 42 in Mathematics.
-- Overall GPA: 3.95/4.30, converted GPA: 3.85/4.00.
-- Major GPA: 4.03/4.30, converted GPA: 3.92/4.00.
