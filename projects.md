@@ -53,13 +53,13 @@ permalink: /projects/
 
   <article class="project-card">
     <a class="project-image" href="{{ "/projects/lg-cns-optimization/" | relative_url }}" aria-label="Read about the LG CNS Optimization Grand Challenge project">
-      <img src="{{ "/assets/images/projects/lg-cns-optimization.png" | relative_url }}" alt="Optimization network with a highlighted optimal route">
+      <img src="{{ "/assets/images/projects/lg-cns-optimization.png" | relative_url }}" alt="Vehicle loading and unloading sequence across five ports">
     </a>
     <div class="project-info">
       <h2><a href="{{ "/projects/lg-cns-optimization/" | relative_url }}">LG CNS Optimization Grand Challenge</a></h2>
       <p class="project-subtitle">Honorable Mention · Top 10%</p>
       <p class="project-meta">Jul 2025 · KRW 500,000 prize</p>
-      <p>An optimization-focused project combining mathematical modeling, algorithm design, and data-driven decision making.</p>
+      <p>A graph-based vehicle stowage solution combining cost modeling, optimal assignment, and adaptive penalties.</p>
     </div>
   </article>
 
