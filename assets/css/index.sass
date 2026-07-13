@@ -64,6 +64,15 @@ body > *
     img
       height: 8em
 
+.cv-preview
+  display: block
+  width: 100%
+  height: min(75vh, 58em)
+  margin: 1em 0
+  border: 1px solid gray(28)
+  border-radius: .35em
+  background: light(100)
+
 @media (max-width: 46em)
   .project-grid
     grid-template-columns: 1fr
@@ -78,14 +87,15 @@ body > *
 
   .intro
     display: grid
-    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr)
+    grid-template-columns: repeat(2, minmax(0, 1fr))
     align-items: center
     gap: 1.75em
     padding-bottom: 1.7em
 
   .profile-photo
-    width: 100%
+    width: min(100%, 20em)
     height: auto
+    max-height: 28em
     margin: 0
     border-radius: .75em
     object-fit: contain
@@ -167,6 +177,9 @@ body > *
     white-space: nowrap
 
 @media (max-width: 46em)
+  .cv-preview
+    height: 70vh
+
   .home
     .intro
       grid-template-columns: 1fr
