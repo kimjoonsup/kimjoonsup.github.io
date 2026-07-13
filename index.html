@@ -1,17 +1,168 @@
 ---
 layout: default
-title: "Home"
+title: "Joonsup Kim"
 ---
 
-{% if site.show_excerpts %}
-  {% for post in site.posts %}
-    <article>
-      {% include meta.html post=post %}
-      {{ post.excerpt }}
-      <footer class="button"><a href="{{ post.url | relative_url }}">read more</a></footer>
+<main class="home">
+  <section class="intro" id="about">
+    <p class="eyebrow">Prospective PhD Applicant</p>
+    <h1>Joonsup Kim</h1>
+    <p class="lead">
+      M.S. student in Data Science at Seoul National University, advised by Prof. Min-hwan Oh.
+      My research interests include bandit algorithms, reinforcement learning, online learning,
+      real-time bidding strategy, dynamic pricing, and optimization.
+    </p>
+    <p>
+      I am interested in decision-making systems that learn from sequential feedback under uncertainty.
+      My current thesis work studies two-sided contextual bandits with UCB-type methods, motivated by
+      preference learning and online matching platforms. Before joining SNU, I completed a double major
+      in Mathematics and Economics at Yonsei University.
+    </p>
+    <p class="contact-line">
+      Seoul, South Korea | <a href="mailto:dankim99@snu.ac.kr">dankim99@snu.ac.kr</a>
+    </p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <div class="two-column">
+      <div>
+        <h3>Research Interests</h3>
+        <ul class="compact-list">
+          <li>Bandit algorithms and online learning</li>
+          <li>Reinforcement learning and sequential decision making</li>
+          <li>Real-time bidding strategy and dynamic pricing</li>
+          <li>Optimization for data-driven platforms</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Current Work</h3>
+        <p>
+          <strong>Two-Sided Contextual Bandits with UCB</strong> [working title].
+          M.S. thesis / manuscript in preparation with Prof. Min-hwan Oh.
+        </p>
+        <p>
+          This project focuses on UCB-type methods for two-sided contextual bandit settings,
+          with motivation from preference learning problems in online matching platforms.
+        </p>
+      </div>
+    </div>
+    <div class="research-note">
+      <h3>Previous Research Experience</h3>
+      <p>
+        As an undergraduate research assistant at Yonsei University's Computational Science and
+        Engineering Lab, I studied theoretical models of epidemic spread and intervention strategies,
+        including how policy design and vaccination strategies affect infection outcomes and economic costs.
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Seoul National University, Graduate School of Data Science</h3>
+        <span>Mar 2025 - Present</span>
+      </div>
+      <p class="meta">M.S. Student in Data Science, expected graduation: Feb 2027 | Advisor: Prof. Min-hwan Oh</p>
+      <p>Working thesis / manuscript in preparation: "Two-Sided Contextual Bandits with UCB" [working title].</p>
     </article>
-  {% endfor %}
-{% else %}
-  {% capture source %}{% include_relative archive.html title="Posts" %}{% endcapture %}
-  {{ source | split: "---" | last }}
-{% endif %}
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Yonsei University</h3>
+        <span>Mar 2019 - Feb 2025</span>
+      </div>
+      <p class="meta">B.S. in Mathematics; B.A. in Economics, Double Major</p>
+      <ul class="compact-list">
+        <li>Graduated 4th out of 42 in Mathematics.</li>
+        <li>Overall GPA: 3.95/4.30, converted GPA: 3.85/4.00.</li>
+        <li>Major GPA: 4.03/4.30, converted GPA: 3.92/4.00.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="projects-honors">
+    <h2>Projects & Honors</h2>
+    <article class="project feature-project">
+      <div class="entry-head">
+        <h3>Kakao AI Agent Competition: AutoReply Agent</h3>
+        <span>Dec 2025</span>
+      </div>
+      <p class="meta">2nd Place | KRW 3,000,000 prize</p>
+      <figure>
+        <img src="{{ "/assets/images/projects/autoreply-agent.png" | relative_url }}" alt="AutoReply agent pipeline diagram">
+        <figcaption>
+          AutoReply agent pipeline for extracting persona data from group chat history, deciding whether a new message
+          should receive an automated response, and generating recommended replies with an LLM.
+        </figcaption>
+      </figure>
+      <p>
+        Designed an AI agent workflow for context-aware message reply generation. The system first extracts persona
+        information from group chat data, then uses a response-decision step to avoid replying to messages that require
+        direct user intervention. For appropriate messages, it combines the new text with persona data and prompts an
+        LLM to produce recommended responses.
+      </p>
+      <ul class="compact-list">
+        <li><strong>Problem:</strong> Generate useful automated replies while preserving user control when manual intervention is needed.</li>
+        <li><strong>Approach:</strong> Persona extraction, response-appropriateness filtering, and LLM-based reply recommendation.</li>
+        <li><strong>Outcome:</strong> 2nd place in the Kakao AI Agent Competition.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="entry-head">
+        <h3>LG CNS Optimization Grand Challenge</h3>
+        <span>Jul 2025</span>
+      </div>
+      <p class="meta">Honorable Mention | Top 10% finish | KRW 500,000 prize</p>
+      <p>
+        Developed an optimization-oriented solution for a competitive decision problem. This project highlights
+        my applied interest in mathematical modeling, algorithm design, and data-driven optimization.
+      </p>
+      <p class="placeholder-note">
+        Add a figure, pipeline diagram, or result visualization here to describe the optimization idea in the same
+        style as the Kakao project.
+      </p>
+    </article>
+
+    <div class="honors-list">
+      <h3>Additional Honors and Scholarships</h3>
+      <ul class="compact-list">
+        <li>Academic Excellence Scholarship, Yonsei University, Fall 2024.</li>
+        <li>Yonsei Excellence Award, Top 10% in college-year cohort, Fall 2024 and Spring 2022.</li>
+        <li>Academic Excellence Scholarship, Yonsei University, Spring 2022.</li>
+        <li>Mathematics Alumni Scholarship, Yonsei University, Fall 2021.</li>
+        <li>Yonsei Honor Award, Top 3% in college-year cohort, Spring 2019.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul class="compact-list">
+      <li>Teaching Assistant, Probability and Statistics for Data Science, Jul 2025.</li>
+      <li>Teaching Assistant, Machine Learning and Deep Learning 1, graduate-level course, Fall 2025.</li>
+      <li>Teaching Assistant, Python for Data-Driven Business and Economics, English class for foreign students, Jul 2026.</li>
+    </ul>
+  </section>
+
+  <section id="video">
+    <h2>Video Introduction</h2>
+    <p>
+      A brief English introduction video can be embedded here. This section is useful for presenting research motivation,
+      academic background, and fit for PhD programs in a more personal format.
+    </p>
+    <div class="video-placeholder">
+      <p>Embed a YouTube, Google Drive, or uploaded video link here.</p>
+    </div>
+  </section>
+
+  <section id="cv">
+    <h2>CV</h2>
+    <p>
+      A downloadable CV can be linked here once the final PDF is added to the repository.
+      Recommended path: <code>assets/files/cv.pdf</code>.
+    </p>
+    <p class="button"><a href="mailto:dankim99@snu.ac.kr">Contact by Email</a></p>
+  </section>
+</main>
