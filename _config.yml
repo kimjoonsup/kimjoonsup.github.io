@@ -21,7 +21,7 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {title: "Home", url: "/"}
   - {title: "Research", url: "/research/"}
   - {title: "Education", url: "/education/"}
-  - {title: "Projects & Honors", url: "/projects/"}
+  - {title: "Projects", url: "/projects/"}
   - {title: "Teaching", url: "/teaching/"}
   - {title: "Video", url: "/video/"}
   - {title: "CV", url: "/cv/"}

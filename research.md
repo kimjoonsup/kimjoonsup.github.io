@@ -15,7 +15,7 @@ permalink: /research/
 
 ### Two-Sided Contextual Bandits with UCB
 
-M.S. thesis / manuscript in preparation with Prof. Min-hwan Oh. This project focuses on UCB-type methods for two-sided contextual bandit settings, with motivation from preference learning problems in online matching platforms.
+M.S. thesis / manuscript in preparation with [Prof. Min-hwan Oh](https://minoh.io). This project focuses on UCB-type methods for two-sided contextual bandit settings, with motivation from preference learning problems in online matching platforms.
 
 ## Previous Research Experience
 
