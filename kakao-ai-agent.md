@@ -4,7 +4,7 @@ title: Kakao AI Agent Competition
 permalink: /projects/kakao-ai-agent/
 ---
 
-**AutoReply Agent / Adaptive Push · 2nd Place · Dec 2025 · KRW 3,000,000 prize**
+**AutoReply Agent / Adaptive Push · 2nd Place · Dec 2025**
 
 This project addressed two everyday communication problems: the effort required to send routine replies and the distraction caused by treating every notification as equally important. We implemented two complementary agents and validated their core workflows through the Telegram API and MCP-based tools.
 

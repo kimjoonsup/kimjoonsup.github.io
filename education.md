@@ -14,5 +14,3 @@ Working thesis / manuscript in preparation: “Two-Sided Contextual Bandits with
 ## Yonsei University
 
 **B.S. in Mathematics; B.A. in Economics, Double Major** · Mar 2019–Feb 2025
-
-- Graduated 4th out of 42.

@@ -6,7 +6,7 @@ permalink: /projects/lg-cns-optimization/
 
 ![Vehicle loading and unloading sequence across five ports]({{ "/assets/images/projects/lg-cns-optimization.png" | relative_url }})
 
-**Honorable Mention · Top 10% finish · KRW 500,000 prize · Jul 2025**
+**Honorable Mention · Top 10% finish · Jul 2025**
 
 ## Problem
 
