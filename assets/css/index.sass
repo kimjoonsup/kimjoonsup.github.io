@@ -82,6 +82,29 @@ body > *
   border-radius: .35em
   background: light(100)
 
+.teaching-list
+  display: grid
+  gap: 1.6em
+  margin-top: 1.25em
+  font-size: 1.08em
+
+.teaching-item
+  display: grid
+  grid-template-columns: 6.5em minmax(0, 1fr)
+  gap: 1.25em
+  align-items: start
+
+.teaching-date
+  font-weight: bold
+
+.teaching-details
+  p
+    margin: 0
+
+  .teaching-note
+    margin-top: .4em
+    color: gray(72)
+
 @media (max-width: 46em)
   .project-card
     grid-template-columns: 1fr
@@ -200,6 +223,10 @@ body > *
   .cv-preview
     width: calc(90vw - 1em)
     height: 76vh
+
+  .teaching-item
+    grid-template-columns: 1fr
+    gap: .25em
 
   .home
     .intro
