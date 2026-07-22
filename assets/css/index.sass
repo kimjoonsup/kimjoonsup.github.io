@@ -107,21 +107,27 @@ body > *
     color: gray(72)
 
 .education-list
-  display: grid
-  gap: 1.4em
+  display: flex
+  flex-direction: column
+  gap: 1.5em
   margin-top: 1.25em
 
-.education-item
-  padding: 1.35em 1.45em
+.education-card
+  padding: 1.4em 1.5em
   border: 1px solid gray(18)
+  border-left: 4px solid gray(40)
   border-radius: .45em
-  background: gray(5)
+  background: light(100, 16)
+  box-shadow: 0 .25em .8em rgba(light(16), .06)
 
-.education-heading
-  display: grid
-  grid-template-columns: minmax(0, 1fr) auto
-  gap: 1.5em
+.education-top
+  display: flex
+  justify-content: space-between
   align-items: start
+  gap: 1.5em
+
+.education-institution
+  min-width: 0
 
   h2
     margin: 0
@@ -137,24 +143,50 @@ body > *
   font-size: 1.08em
   font-weight: bold
 
-.education-date
-  justify-self: end
+.education-period
+  flex: 0 0 auto
+  margin-left: auto
   white-space: nowrap
   font-weight: bold
+  text-align: right
 
-.education-meta
+.education-details
   display: flex
   flex-wrap: wrap
-  gap: .35em 1.5em
+  gap: .75em 2em
   margin-top: 1em
   padding-top: .85em
   border-top: 1px solid gray(18)
 
-.education-note
-  margin: 1em 0 0
-  color: gray(72)
+  p
+    display: flex
+    flex-direction: column
+    margin: 0
 
   span
+    color: gray(72)
+
+.education-thesis
+  margin-top: 1em
+  padding: .85em 1em
+  border-radius: .3em
+  background: gray(8)
+
+  p
+    margin: .25em 0 0
+    color: gray(72)
+
+  span
+    font-size: .9em
+
+@media (max-width: 36em)
+  .education-card
+    padding: 1.2em
+
+  .education-top
+    gap: .75em
+
+  .education-period
     font-size: .9em
 
 @media (max-width: 46em)
