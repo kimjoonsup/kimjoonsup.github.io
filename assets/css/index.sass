@@ -90,11 +90,12 @@ body > *
 
 .teaching-item
   display: grid
-  grid-template-columns: 6.5em minmax(0, 1fr)
+  grid-template-columns: minmax(0, 1fr) auto
   gap: 1.25em
   align-items: start
 
 .teaching-date
+  justify-self: end
   font-weight: bold
 
 .teaching-details
@@ -223,10 +224,6 @@ body > *
   .cv-preview
     width: calc(90vw - 1em)
     height: 76vh
-
-  .teaching-item
-    grid-template-columns: 1fr
-    gap: .25em
 
   .home
     .intro
