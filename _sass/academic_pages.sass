@@ -6,13 +6,27 @@
 
 .teaching-item
   display: grid
-  grid-template-columns: minmax(0, 1fr) auto
-  gap: 1.25em
+  grid-template-columns: .6em minmax(0, 1fr) auto
+  gap: .8em
   align-items: start
+  padding-bottom: 1.2em
+  border-bottom: 1px solid gray(18)
+
+  &::before
+    content: "•"
+    color: gray(72)
+    font-size: 1.15em
+    line-height: 1.6
+
+  &:last-child
+    padding-bottom: 0
+    border-bottom: 0
 
 .teaching-date
   justify-self: end
+  white-space: nowrap
   font-weight: bold
+  text-align: right
 
 .teaching-details
   p
