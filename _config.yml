@@ -23,7 +23,6 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {title: "Education", url: "/education/"}
   - {title: "Projects", url: "/projects/"}
   - {title: "Teaching", url: "/teaching/"}
-  - {title: "Video", url: "/video/"}
   - {title: "CV", url: "/cv/"}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}

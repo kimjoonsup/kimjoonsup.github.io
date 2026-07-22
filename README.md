@@ -15,7 +15,6 @@ The homepage includes:
 - Education
 - Projects & Honors
 - Teaching
-- Video Introduction
 - CV
 
 ## Main Files
