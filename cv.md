@@ -24,8 +24,8 @@ permalink: /cv/
   }
 </style>
 
-<iframe class="cv-preview" src="{{ "/assets/files/cv.pdf" | relative_url }}?v={{ site.github.build_revision }}#view=FitH" title="Joonsup Kim CV preview"></iframe>
+<iframe class="cv-preview" src="{{ "/assets/files/cv.pdf" | relative_url }}?v=20260810#view=FitH" title="Joonsup Kim CV preview"></iframe>
 
-[Open or download my CV (PDF)]({{ "/assets/files/cv.pdf" | relative_url }})
+[Open or download my CV (PDF)]({{ "/assets/files/cv.pdf" | relative_url }}?v=20260810)
 
 [Contact me by email](mailto:dankim99@snu.ac.kr)
