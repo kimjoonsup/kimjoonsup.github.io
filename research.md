@@ -13,9 +13,9 @@ permalink: /research/
 
 ## Current Work
 
-### Two-Sided Contextual Bandits with UCB
+### “Matching Bandits in Large Markets” *(working title)*
 
-M.S. thesis / manuscript in preparation with [Prof. Min-hwan Oh](https://minoh.io). This project focuses on UCB-type methods for two-sided contextual bandit settings, with motivation from preference learning problems in online matching platforms.
+M.S. thesis and manuscript in preparation with [Prof. Min-hwan Oh](https://minoh.io). Developing the market model, learning algorithm, theoretical analysis, and computational evaluation.
 
 ## Previous Research Experience
 
