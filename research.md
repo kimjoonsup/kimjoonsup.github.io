@@ -6,10 +6,7 @@ permalink: /research/
 
 ## Research Interests
 
-- Data-Driven Decision-Making
-- Online Learning
-- Market Design
-- Game Theory
+- Data-Driven Decision-Making, Online Learning, Market Design, Game Theory
 
 ## Current Work
 
