@@ -6,26 +6,18 @@ permalink: /research/
 
 ## Research Interests
 
-### Research Focus
-
 - Data-Driven Decision-Making
-- Machine Learning for Optimization
+- Online Learning
 - Market Design
-
-### Methods and Applications
-
-- Online Learning and Bandit Algorithms
-- Matching Theory and Game Theory
+- Game Theory
 
 ## Current Work
 
 ### “Bilinear Matching Bandits with Sparse Edge Features and Sequential Feedback” *(working title)*
 
-M.S. thesis and manuscript in preparation with [Prof. Min-hwan Oh](https://minoh.io).
+My current research explores how ride-hailing platforms can learn the preferences of drivers and passengers to provide more efficient matches. By learning which matches both sides are likely to accept, the platform can improve its matching decisions over time.
 
-- Formulated a two-sided matching model motivated by ride-hailing, incorporating sparse feasible graphs, participant preference features, and pair-specific contexts. Shared bilinear logistic acceptance models enable learning across participants.
-- Developed a UCB-based algorithm that combines optimistic acceptance estimates with maximum-weight matching to maximize the expected number of mutually accepted pairs under sequentially censored feedback.
-- Established a sublinear bound on expected cumulative regret relative to an oracle with known model parameters, characterizing its dependence on market size and feature dimensions.
+M.S. thesis and manuscript in preparation with [Prof. Min-hwan Oh](https://minoh.io).
 
 ## Previous Research Experience
 
