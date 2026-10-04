@@ -6,16 +6,26 @@ permalink: /research/
 
 ## Research Interests
 
-- Bandit algorithms and online learning
-- Reinforcement learning and sequential decision making
-- Real-time bidding strategy and dynamic pricing
-- Optimization for data-driven platforms
+### Research Focus
+
+- Data-Driven Decision-Making
+- Machine Learning for Optimization
+- Market Design
+
+### Methods and Applications
+
+- Online Learning and Bandit Algorithms
+- Matching Theory and Game Theory
 
 ## Current Work
 
-### “Matching Bandits in Large Markets” *(working title)*
+### “Bilinear Matching Bandits with Sparse Edge Features and Sequential Feedback” *(working title)*
 
-M.S. thesis and manuscript in preparation with [Prof. Min-hwan Oh](https://minoh.io). Developing the market model, learning algorithm, theoretical analysis, and computational evaluation.
+M.S. thesis and manuscript in preparation with [Prof. Min-hwan Oh](https://minoh.io).
+
+- Formulated a two-sided matching model motivated by ride-hailing, incorporating sparse feasible graphs, participant preference features, and pair-specific contexts. Shared bilinear logistic acceptance models enable learning across participants.
+- Developed a UCB-based algorithm that combines optimistic acceptance estimates with maximum-weight matching to maximize the expected number of mutually accepted pairs under sequentially censored feedback.
+- Established a sublinear bound on expected cumulative regret relative to an oracle with known model parameters, characterizing its dependence on market size and feature dimensions.
 
 ## Previous Research Experience
 
