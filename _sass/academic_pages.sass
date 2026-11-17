@@ -78,83 +78,93 @@
 
 .project-grid
   display: grid
-  grid-template-columns: minmax(0, 1fr)
-  gap: 1.5rem
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+  gap: 1.75rem
 
 .project-card
-  display: grid
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr)
+  display: flex
+  flex-direction: column
+  min-width: 0
   overflow: hidden
+  border-radius: .9rem
 
   .project-image
-    display: flex
-    align-items: center
-    justify-content: center
-    padding: .75rem
-    border-right: 1px solid gray(18)
-    background: light(98, 14)
+    aspect-ratio: 16 / 9
+    width: 100%
+    box-sizing: border-box
+    overflow: hidden
+    border-bottom: 1px solid gray(18)
+    background: #fff
 
     img
       display: block
       width: 100%
-      max-height: 20rem
+      height: 100%
       margin: 0
       object-fit: contain
-      border-radius: .2rem
+      border-radius: 0
+      transition: transform .3s ease
 
   .project-image-pair
     display: grid
-    align-content: center
-    gap: .75rem
+    grid-template-rows: repeat(2, minmax(0, 1fr))
+    gap: .5rem
+    padding: .75rem
 
     img
-      height: 7.5rem
+      min-height: 0
 
   .project-info
     display: flex
+    flex: 1
     flex-direction: column
     align-items: flex-start
-    gap: .75rem
+    gap: .85rem
     min-width: 0
     padding: 1.5rem
 
   h2
     margin: 0
-    font-size: 1.25rem
+    font-size: 1.35rem
     line-height: 1.35
+    color: inherit
+    transition: color .2s ease
 
   p
     margin: 0
-
-  .project-subtitle
-    font-size: .95rem
-    font-weight: bold
+    color: light-dark(#4d5666, #c1c8d4)
 
   .project-meta
+    display: flex
+    flex-wrap: wrap
+    align-items: baseline
+    gap: .25em .5em
     color: light-dark(#596273, #b5bdcc)
     font-size: .875rem
 
-  .card-action
-    margin-top: auto
-    padding-top: .5rem
+    time
+      white-space: nowrap
+
+  &:hover, &:focus-visible
+    h2
+      color: $link
+
+    .project-image img
+      transform: scale(1.045)
 
 @media (max-width: 46em)
-  .project-card
+  .project-grid
     grid-template-columns: minmax(0, 1fr)
-
-    .project-image
-      border-right: 0
-      border-bottom: 1px solid gray(18)
-
-      img
-        max-height: 14rem
 
   .research-card, .project-card .project-info
     padding: 1.25rem
 
 @media (prefers-reduced-motion: reduce)
-  .research-card, .project-card
+  .research-card, .project-card, .project-card h2, .project-card .project-image img
     transition: none
+
+  .project-card:hover .project-image img, .project-card:focus-visible .project-image img
+    transform: none
 
 .teaching-list
   display: grid
