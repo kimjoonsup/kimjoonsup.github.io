@@ -11,12 +11,24 @@ page_class: collection-page projects-page
       <img src="{{ "/assets/images/projects/grover-nonogram-cover.png" | relative_url }}?v={{ site.github.build_revision }}" alt="Title slide of Solving a 3×3 Nonogram with Grover’s Algorithm">
     </div>
     <div class="project-info">
-      <p class="project-meta"><span>Quantum Computing</span><span aria-hidden="true">·</span><time datetime="2026-11">Nov 2026</time></p>
+      <p class="project-meta"><span>Quantum Computing Course</span><span aria-hidden="true">·</span><time datetime="2026-11">Nov 2026</time></p>
       <h2 id="project-title-grover-nonogram">Solving a 3×3 Nonogram with Grover’s Algorithm</h2>
       <p>A 12-qubit circuit that searches 512 possible boards using a reversible constraint-counting oracle and amplitude amplification.</p>
     </div>
   </a>
 
+  <a class="project-card" href="{{ "/projects/signal-free-flow/" | relative_url }}" aria-labelledby="project-title-signal-free-flow">
+    <div class="project-image">
+      <img src="{{ "/assets/images/projects/signal-free-flow-poster.png" | relative_url }}" alt="Signal-Free Flow reinforcement learning project poster">
+    </div>
+    <div class="project-info">
+      <p class="project-meta"><span>Reinforcement Learning Course</span><span aria-hidden="true">·</span><time datetime="2026-06">Jun 2026</time></p>
+      <h2 id="project-title-signal-free-flow">Signal-Free Flow</h2>
+      <p>A safety-aware PPO controller for reducing congestion at a fully autonomous four-way intersection.</p>
+    </div>
+  </a>
+  
+</div>
   <a class="project-card" href="{{ "/projects/kakao-ai-agent/" | relative_url }}" aria-labelledby="project-title-kakao-ai-agent">
     <div class="project-image project-image-pair">
       <img src="{{ "/assets/images/projects/AutoReply.drawio.png" | relative_url }}" alt="AutoReply agent pipeline diagram">
@@ -40,14 +52,3 @@ page_class: collection-page projects-page
     </div>
   </a>
 
-  <a class="project-card" href="{{ "/projects/signal-free-flow/" | relative_url }}" aria-labelledby="project-title-signal-free-flow">
-    <div class="project-image">
-      <img src="{{ "/assets/images/projects/signal-free-flow-poster.png" | relative_url }}" alt="Signal-Free Flow reinforcement learning project poster">
-    </div>
-    <div class="project-info">
-      <p class="project-meta"><span>Reinforcement Learning</span><span aria-hidden="true">·</span><time datetime="2026-06">Jun 2026</time></p>
-      <h2 id="project-title-signal-free-flow">Signal-Free Flow</h2>
-      <p>A safety-aware PPO controller for reducing congestion at a fully autonomous four-way intersection.</p>
-    </div>
-  </a>
-</div>
