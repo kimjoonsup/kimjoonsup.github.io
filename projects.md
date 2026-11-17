@@ -45,6 +45,7 @@ permalink: /projects/
     <div class="project-info">
       <h2><a href="{{ "/projects/grover-nonogram/" | relative_url }}">Solving a 3×3 Nonogram with Grover’s Algorithm</a></h2>
       <p class="project-subtitle">Quantum Computing Project</p>
+      <p class="project-meta">November 2026</p>
       <p>A 12-qubit circuit that searches 512 possible boards using a reversible constraint-counting oracle and amplitude amplification.</p>
     </div>
   </article>
@@ -81,6 +82,7 @@ permalink: /projects/
     <div class="project-info">
       <h2><a href="{{ "/projects/signal-free-flow/" | relative_url }}">Signal-Free Flow</a></h2>
       <p class="project-subtitle">Reinforcement Learning Course Project</p>
+      <p class="project-meta">June 2026</p>
       <p>A safety-aware PPO controller for reducing congestion at a fully autonomous four-way intersection.</p>
     </div>
   </article>
