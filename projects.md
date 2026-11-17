@@ -27,8 +27,7 @@ page_class: collection-page projects-page
       <p>A safety-aware PPO controller for reducing congestion at a fully autonomous four-way intersection.</p>
     </div>
   </a>
-  
-</div>
+
   <a class="project-card" href="{{ "/projects/kakao-ai-agent/" | relative_url }}" aria-labelledby="project-title-kakao-ai-agent">
     <div class="project-image project-image-pair">
       <img src="{{ "/assets/images/projects/AutoReply.drawio.png" | relative_url }}" alt="AutoReply agent pipeline diagram">
@@ -51,4 +50,4 @@ page_class: collection-page projects-page
       <p>An Honorable Mention (top 10%) vehicle stowage solution combining cost modeling, optimal assignment, and adaptive penalties.</p>
     </div>
   </a>
-
+</div>
