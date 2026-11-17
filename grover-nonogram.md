@@ -4,13 +4,13 @@ title: "Solving a 3×3 Nonogram with Grover’s Algorithm"
 permalink: /projects/grover-nonogram/
 ---
 
-![Solved Nonogram and results after 17 Grover iterations: 99.94% theoretical success probability and 1,024 correct shots out of 1,024 on an ideal simulator]({{ "/assets/images/projects/grover-nonogram-solution.png" | relative_url }})
+![Solved Nonogram and results after 17 Grover iterations: 99.94% theoretical success probability and 1,024 correct shots out of 1,024 on an ideal simulator]({{ "/assets/images/projects/grover-nonogram-solution.png" | relative_url }}?v={{ site.github.build_revision }})
 
 **Quantum Computing Project · Grover Search · Reversible Circuits**
 
 This project uses Grover’s algorithm to solve a 3×3 Nonogram, translating a small logic puzzle into a quantum search problem. A 12-qubit circuit checks the puzzle’s constraints, marks the valid board, and amplifies its probability through repeated Grover iterations.
 
-[View the project presentation (PDF)]({{ "/assets/files/grover-nonogram.pdf" | relative_url }})
+[View the project presentation (PDF)]({{ "/assets/files/grover-nonogram.pdf" | relative_url }}?v={{ site.github.build_revision }})
 
 ## Problem
 
@@ -34,7 +34,7 @@ Each Grover iteration applies the oracle followed by diffusion on the nine data 
 
 ## Results
 
-![Theoretical and measured success probability across 0 to 35 Grover iterations, peaking near iteration 17]({{ "/assets/images/projects/grover-nonogram-probability.png" | relative_url }})
+![Theoretical and measured success probability across 0 to 35 Grover iterations, peaking near iteration 17]({{ "/assets/images/projects/grover-nonogram-probability.png" | relative_url }}?v={{ site.github.build_revision }})
 
 The presentation compares the theoretical curve with ideal-simulator measurements using 1,024 shots per iteration count. At 17 iterations, the theoretical probability of measuring the solution is **99.9448%**, and the reported simulation returned the correct board in **1,024 out of 1,024 shots**. These are ideal-simulator results; the finite sample’s 100% success rate is distinct from the theoretical probability.
 
