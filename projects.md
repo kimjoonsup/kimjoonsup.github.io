@@ -40,7 +40,7 @@ permalink: /projects/
 <div class="project-grid">
   <article class="project-card">
     <a class="project-image" href="{{ "/projects/grover-nonogram/" | relative_url }}" aria-label="Read about solving a 3 by 3 Nonogram with Grover's algorithm">
-      <img src="{{ "/assets/images/projects/grover-nonogram-solution.png" | relative_url }}?v={{ site.github.build_revision }}" alt="Solved 3 by 3 Nonogram with 99.94 percent theoretical success probability after 17 Grover iterations">
+      <img src="{{ "/assets/images/projects/grover-nonogram-cover.png" | relative_url }}?v={{ site.github.build_revision }}" alt="Title slide of Solving a 3×3 Nonogram with Grover’s Algorithm">
     </a>
     <div class="project-info">
       <h2><a href="{{ "/projects/grover-nonogram/" | relative_url }}">Solving a 3×3 Nonogram with Grover’s Algorithm</a></h2>
