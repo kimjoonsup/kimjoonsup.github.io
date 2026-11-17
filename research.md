@@ -16,7 +16,7 @@ permalink: /research/
   <h3>Learning to Match with Two-Sided Acceptance</h3>
   <p class="research-meta">M.S. thesis in progress · Working title · Advisor: Prof. Min-hwan Oh</p>
   <p>Learning both sides’ preferences from sequential feedback to increase mutually accepted matches, motivated by ride-hailing.</p>
-</a>
+
 
 ## Works in Progress
 
@@ -24,7 +24,7 @@ permalink: /research/
   <h3>Matching Bandits in Large Markets</h3>
   <p class="research-meta">Work in progress · Advisor: Prof. Min-hwan Oh</p>
   <p>Preference learning and stable matching when the number of potential partners exceeds the available interaction horizon.</p>
-</a>
+
 
 ## Undergraduate Research
 
