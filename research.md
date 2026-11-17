@@ -2,6 +2,7 @@
 layout: page
 title: Research
 permalink: /research/
+page_class: collection-page research-page
 ---
 
 ## Research Interests
@@ -12,19 +13,31 @@ permalink: /research/
 
 ## Dissertation
 
-<a class="research-card" href="{{ "/research/two-sided-acceptance/" | relative_url }}">
-  <h3>Learning to Match with Two-Sided Acceptance</h3>
-  <p class="research-meta">M.S. thesis in progress · Working title · Advisor: Prof. Min-hwan Oh</p>
-  <p>Learning both sides’ preferences from sequential feedback to increase mutually accepted matches, motivated by ride-hailing.</p>
-
+<div class="research-list">
+  <a class="research-card" href="{{ "/research/two-sided-acceptance/" | relative_url }}" aria-labelledby="dissertation-title">
+    <h3 id="dissertation-title">Learning to Match with Two-Sided Acceptance</h3>
+    <p>Learning both sides’ preferences from sequential feedback to increase mutually accepted matches, motivated by ride-hailing.</p>
+    <div class="research-meta">
+      <span>M.S. thesis in progress · Working title</span>
+      <span>Advisor: Prof. Min-hwan Oh</span>
+    </div>
+    <span class="card-action">View research <span aria-hidden="true">→</span></span>
+  </a>
+</div>
 
 ## Works in Progress
 
-<a class="research-card" href="{{ "/research/matching-bandits-large-markets/" | relative_url }}">
-  <h3>Matching Bandits in Large Markets</h3>
-  <p class="research-meta">Work in progress · Advisor: Prof. Min-hwan Oh</p>
-  <p>Preference learning and stable matching when the number of potential partners exceeds the available interaction horizon.</p>
-
+<div class="research-list">
+  <a class="research-card" href="{{ "/research/matching-bandits-large-markets/" | relative_url }}" aria-labelledby="large-markets-title">
+    <h3 id="large-markets-title">Matching Bandits in Large Markets</h3>
+    <p>Preference learning and stable matching when the number of potential partners exceeds the available interaction horizon.</p>
+    <div class="research-meta">
+      <span>Work in progress</span>
+      <span>Advisor: Prof. Min-hwan Oh</span>
+    </div>
+    <span class="card-action">View research <span aria-hidden="true">→</span></span>
+  </a>
+</div>
 
 ## Undergraduate Research
 
