@@ -40,6 +40,10 @@ The presentation compares the theoretical curve with ideal-simulator measurement
 
 The experiment demonstrates how reversible constraint checking and uncomputation can support amplitude amplification. The probability falls again beyond the first peak, illustrating why choosing the iteration count matters.
 
-[View the full presentation (PDF)]({{ "/assets/files/grover-nonogram.pdf" | relative_url }})
+## Full Presentation
+
+<iframe src="{{ "/assets/files/grover-nonogram.pdf" | relative_url }}?v={{ site.github.build_revision }}#view=FitH" title="Full presentation: Solving a 3×3 Nonogram with Grover’s Algorithm" loading="lazy" style="display: block; width: 100%; height: 80vh; min-height: 360px; box-sizing: border-box; border: 1px solid #848796; border-radius: 0.35rem;"></iframe>
+
+<p><a href="{{ "/assets/files/grover-nonogram.pdf" | relative_url }}?v={{ site.github.build_revision }}" target="_blank" rel="noopener">Open the full PDF in a new tab</a></p>
 
 [← Back to Projects]({{ "/projects/" | relative_url }})
