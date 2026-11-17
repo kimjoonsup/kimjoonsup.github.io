@@ -4,13 +4,13 @@ title: "Solving a 3×3 Nonogram with Grover’s Algorithm"
 permalink: /projects/grover-nonogram/
 ---
 
-![Solved Nonogram and results after 17 Grover iterations: 99.94% theoretical success probability and 1,024 correct shots out of 1,024 on an ideal simulator]({{ "/assets/images/projects/grover-nonogram-solution.png" | relative_url }}?v={{ site.github.build_revision }})
+<iframe src="{{ "/assets/files/grover-nonogram.pdf" | relative_url }}?v={{ site.github.build_revision }}#view=FitH" title="Full presentation: Solving a 3×3 Nonogram with Grover’s Algorithm" style="display: block; width: 100%; height: 80vh; min-height: 360px; box-sizing: border-box; border: 1px solid #848796; border-radius: 0.35rem;"></iframe>
+
+<p><a href="{{ "/assets/files/grover-nonogram.pdf" | relative_url }}?v={{ site.github.build_revision }}" target="_blank" rel="noopener">Open the full PDF in a new tab</a></p>
 
 **Quantum Computing Project · Grover Search · Reversible Circuits**
 
 This project uses Grover’s algorithm to solve a 3×3 Nonogram, translating a small logic puzzle into a quantum search problem. A 12-qubit circuit checks the puzzle’s constraints, marks the valid board, and amplifies its probability through repeated Grover iterations.
-
-[View the project presentation (PDF)]({{ "/assets/files/grover-nonogram.pdf" | relative_url }}?v={{ site.github.build_revision }})
 
 ## Problem
 
@@ -39,11 +39,5 @@ Each Grover iteration applies the oracle followed by diffusion on the nine data 
 The presentation compares the theoretical curve with ideal-simulator measurements using 1,024 shots per iteration count. At 17 iterations, the theoretical probability of measuring the solution is **99.9448%**, and the reported simulation returned the correct board in **1,024 out of 1,024 shots**. These are ideal-simulator results; the finite sample’s 100% success rate is distinct from the theoretical probability.
 
 The experiment demonstrates how reversible constraint checking and uncomputation can support amplitude amplification. The probability falls again beyond the first peak, illustrating why choosing the iteration count matters.
-
-## Full Presentation
-
-<iframe src="{{ "/assets/files/grover-nonogram.pdf" | relative_url }}?v={{ site.github.build_revision }}#view=FitH" title="Full presentation: Solving a 3×3 Nonogram with Grover’s Algorithm" loading="lazy" style="display: block; width: 100%; height: 80vh; min-height: 360px; box-sizing: border-box; border: 1px solid #848796; border-radius: 0.35rem;"></iframe>
-
-<p><a href="{{ "/assets/files/grover-nonogram.pdf" | relative_url }}?v={{ site.github.build_revision }}" target="_blank" rel="noopener">Open the full PDF in a new tab</a></p>
 
 [← Back to Projects]({{ "/projects/" | relative_url }})
