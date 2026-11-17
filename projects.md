@@ -39,6 +39,17 @@ permalink: /projects/
 
 <div class="project-grid">
   <article class="project-card">
+    <a class="project-image" href="{{ "/projects/grover-nonogram/" | relative_url }}" aria-label="Read about solving a 3 by 3 Nonogram with Grover's algorithm">
+      <img src="{{ "/assets/images/projects/grover-nonogram-solution.png" | relative_url }}" alt="Solved 3 by 3 Nonogram with 99.94 percent theoretical success probability after 17 Grover iterations">
+    </a>
+    <div class="project-info">
+      <h2><a href="{{ "/projects/grover-nonogram/" | relative_url }}">Solving a 3×3 Nonogram with Grover’s Algorithm</a></h2>
+      <p class="project-subtitle">Quantum Computing Project</p>
+      <p>A 12-qubit circuit that searches 512 possible boards using a reversible constraint-counting oracle and amplitude amplification.</p>
+    </div>
+  </article>
+
+  <article class="project-card">
     <a class="project-image project-image-pair" href="{{ "/projects/kakao-ai-agent/" | relative_url }}" aria-label="Read about the Kakao AI Agent Competition project">
       <img src="{{ "/assets/images/projects/AutoReply.drawio.png" | relative_url }}" alt="AutoReply agent pipeline diagram">
       <img src="{{ "/assets/images/projects/AdaptivePush.drawio.png" | relative_url }}" alt="Adaptive Push contextual bandit pipeline diagram">
