@@ -17,6 +17,7 @@ title: "Joonsup Kim"
     height: 20rem !important;
     margin: 0 !important;
     object-fit: contain !important;
+    box-sizing: border-box;
   }
 
   .home .profile-figure {
@@ -25,10 +26,100 @@ title: "Joonsup Kim"
 
   .home .profile-caption {
     margin-top: 0.65rem !important;
-    color: #6f7280 !important;
-    font-size: 0.82em !important;
+    color: light-dark(#596273, #b5bdcc) !important;
+    font-size: 0.875rem !important;
     font-style: italic !important;
     line-height: 1.4 !important;
+  }
+
+  .home .profile-carousel {
+    position: relative;
+    min-width: 0;
+  }
+
+  .home .profile-slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+
+  .home .profile-slides::-webkit-scrollbar {
+    display: none;
+  }
+
+  .home .profile-figure {
+    flex: 0 0 100%;
+    min-width: 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .home .profile-controls[hidden] {
+    display: none;
+  }
+
+  .home .profile-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: .25rem;
+  }
+
+  .home .profile-controls button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .home .profile-nav {
+    position: absolute;
+    top: 10rem;
+    transform: translateY(-50%);
+    color: #242936;
+    background: rgba(255, 255, 255, .94);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .18);
+  }
+
+  .home .profile-prev { left: .25rem; }
+  .home .profile-next { right: .25rem; }
+  .home .profile-nav svg { width: 1.25rem; height: 1.25rem; }
+  .home .profile-nav:disabled { opacity: .35; cursor: default; }
+  .home .profile-dot { background: transparent; }
+
+  .home .profile-dot::before {
+    content: "";
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background: light-dark(#9399a5, #7e8798);
+  }
+
+  .home .profile-dot[aria-pressed="true"]::before {
+    background: light-dark(#4466ff, #6c98ff);
+  }
+
+  .home .profile-controls button:focus-visible,
+  .home .profile-slides:focus-visible {
+    outline: 2px solid light-dark(#4466ff, #6c98ff);
+    outline-offset: 2px;
+  }
+
+  .home .profile-status {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
   }
 
   @media (max-width: 46em) {
@@ -39,15 +130,38 @@ title: "Joonsup Kim"
     .home .profile-photo {
       height: 14rem !important;
     }
+
+    .home .profile-nav { top: 7rem; }
   }
 </style>
 
 <main class="home">
   <section class="intro">
-    <figure class="profile-figure">
-      <img class="profile-photo" src="{{ "/assets/images/joonsup-kim-profile.png" | relative_url }}?v={{ site.github.build_revision }}" alt="Joonsup Kim at Stamford Bridge">
-      <figcaption class="profile-caption">As you can see, I enjoy watching English football and I’m especially a big fan of Chelsea FC. This photo was taken during my visit to Stamford Bridge, Chelsea’s home stadium, which was a truly memorable experience for me!</figcaption>
-    </figure>
+    <div class="profile-carousel" role="region" aria-roledescription="carousel" aria-label="Photos of Joonsup Kim">
+      <div class="profile-slides" id="profile-slides" tabindex="0" role="group" aria-label="Swipe or use the left and right arrow keys to change photos">
+        <figure class="profile-figure" aria-label="1 of 2: Stamford Bridge">
+          <img class="profile-photo" src="{{ "/assets/images/joonsup-kim-profile.png" | relative_url }}?v={{ site.github.build_revision }}" alt="Joonsup Kim at Stamford Bridge" draggable="false">
+          <figcaption class="profile-caption">As you can see, I enjoy watching English football and I’m especially a big fan of Chelsea FC. This photo was taken during my visit to Stamford Bridge, Chelsea’s home stadium, which was a truly memorable experience for me!</figcaption>
+        </figure>
+        <figure class="profile-figure" aria-label="2 of 2: Tennis">
+          <img class="profile-photo" src="{{ "/assets/images/joonsup-kim-tennis.jpeg" | relative_url }}?v={{ site.github.build_revision }}" alt="Joonsup Kim holding a racket on an outdoor tennis court" loading="lazy" decoding="async" draggable="false">
+          <figcaption class="profile-caption">Outside of research, I enjoy spending time on the tennis court.</figcaption>
+        </figure>
+      </div>
+      <div class="profile-controls" hidden>
+        <button class="profile-nav profile-prev" type="button" aria-label="Previous photo" aria-controls="profile-slides" disabled>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+        </button>
+        <button class="profile-nav profile-next" type="button" aria-label="Next photo" aria-controls="profile-slides">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </button>
+        <div class="profile-dots" role="group" aria-label="Choose a photo">
+          <button class="profile-dot" type="button" aria-label="Show photo 1: Stamford Bridge" aria-controls="profile-slides" aria-pressed="true" data-slide="0"></button>
+          <button class="profile-dot" type="button" aria-label="Show photo 2: Tennis" aria-controls="profile-slides" aria-pressed="false" data-slide="1"></button>
+        </div>
+      </div>
+      <span class="profile-status" aria-live="polite" aria-atomic="true">Photo 1 of 2: Stamford Bridge</span>
+    </div>
     <div class="intro-copy">
       <h1>Joonsup Kim</h1>
       <p>
@@ -59,3 +173,5 @@ title: "Joonsup Kim"
     </div>
   </section>
 </main>
+
+<script src="{{ "/assets/js/profile-carousel.js" | relative_url }}?v={{ site.github.build_revision }}" defer></script>
